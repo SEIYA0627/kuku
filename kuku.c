@@ -1,10 +1,16 @@
 #include <stdio.h>
-int main(){
+#include <stdlib.h>
+
+int main(int argc, char *argv[]){
     int a,b,sum;
     int i,j;
+    int MAX;
 
-    for(i=1;i<15;i++){
-        for(j=1;j<15;j++){
+    MAX=atoi(argv[1]);
+    printf("%d\n",MAX);
+
+    for(i=1;i<MAX;i++){
+        for(j=1;j<MAX;j++){
             sum=i*j;
             printf("%3d ",sum);
         }
