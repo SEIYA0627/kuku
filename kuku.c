@@ -9,8 +9,8 @@ int main(int argc, char *argv[]){
     MAX=atoi(argv[1]);
     printf("%d\n",MAX);
 
-    for(i=1;i<MAX;i++){
-        for(j=1;j<MAX;j++){
+    for(i=1;i<=MAX;i++){
+        for(j=1;j<=MAX;j++){
             sum=i*j;
             printf("%3d ",sum);
         }
